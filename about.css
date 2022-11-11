@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Black Ops One";
+  background-color: #4f5328;
+  color: black;
+  position: relative;
+}
+
+.container {
+  width: 1540px;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 25px;
+}
+.main-header {
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: #c7c1b6;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  word-spacing: 1px;
+}
+
+/*.us-marines {
+  background-image: url(image.jpg);
+}*/
+
+.usmc-picture {
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.welcome-and-who {
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: #c7c1b6;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.what-and-why {
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: #c7c1b6;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.get-started-button {
+  font-family: "Black Ops One";
+  border-radius: 15px;
+  background-color: #4f5328;
+  border: 3px solid black;
+  color: #c7c1b6;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+.us-marines-on-deck {
+  border-radius: 15px;
+  border: 3px solid black;
+}
+/*EFFECTS*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: #c7c1b6;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.home-nav,
+.transition-nav,
+.family-nav,
+.mental-nav,
+.HIT-nav {
+  --_g1: conic-gradient(from 90deg at 50% 75%, #000 90deg, #fff 0) no-repeat;
+  --_g2: conic-gradient(from 90deg at 50% 75%, #0000 90deg, #000 0) no-repeat;
+  background: var(--_g1) 0 calc(134% - var(--_p, 0%)),
+    var(--_g2) 0 calc(134% - var(--_p, 0%)),
+    var(--_g1) 100% calc(200% - var(--_p, 0%)),
+    var(--_g2) 100% calc(200% - var(--_p, 0%)), #000;
+  background-size: 50.2% 400%;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.8s;
+}
+.home-nav:hover,
+.transition-nav:hover,
+.family-nav:hover,
+.mental-nav:hover,
+.HIT-nav:hover {
+  --_p: 134%;
+}
+
+.about-me {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.usmc-picture,
+.us-marines-on-deck {
+  transition: 1s ease;
+}
+
+/* .usmc-picture:hover,
+.us-marines-on-deck:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+} */
+
+.welcome-and-who p:last-child {
+  margin-bottom: 0;
+}
+
+.what-and-marines-on-deck {
+  display: flex;
+  gap: 30px;
+}
+
+.get-started-button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.get-started-button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 9px;
+  right: -50px;
+  transition: 0.9s;
+}
+
+.get-started-button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.get-started-button:hover:after {
+  opacity: 1;
+  right: 10px;
+}

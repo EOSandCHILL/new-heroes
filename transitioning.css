@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Black Ops One";
+  background-color: #4f5328;
+  color: black;
+  position: relative;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.container {
+  width: 1540px;
+  margin: 20px auto;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-header {
+  border: 3px solid black;
+  border-radius: 15px;
+  background-color: #c7c1b6;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  word-spacing: 1px;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: #c7c1b6;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.home-nav,
+.family-nav,
+.mental-nav,
+.HIT-nav,
+.about-nav {
+  --_g1: conic-gradient(from 90deg at 50% 75%, #000 90deg, #fff 0) no-repeat;
+  --_g2: conic-gradient(from 90deg at 50% 75%, #0000 90deg, #000 0) no-repeat;
+  background: var(--_g1) 0 calc(134% - var(--_p, 0%)),
+    var(--_g2) 0 calc(134% - var(--_p, 0%)),
+    var(--_g1) 100% calc(200% - var(--_p, 0%)),
+    var(--_g2) 100% calc(200% - var(--_p, 0%)), #000;
+  background-size: 50.2% 400%;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.8s;
+}
+.home-nav:hover,
+.family-nav:hover,
+.mental-nav:hover,
+.HIT-nav:hover,
+.about-nav:hover {
+  --_p: 134%;
+}
+
+.transitioning-members {
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 1540px;
+}
+
+/* .transitioning-members {
+  transition: 1s ease;
+}
+
+.transitioning-members:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+} */
